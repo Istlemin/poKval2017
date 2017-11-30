@@ -9,6 +9,22 @@ typedef long long ll;
 typedef vector<ll> vi;
 typedef pair<ll,ll> pii;
 
+/*
+Iterera över alla möjliga värden a på den ena sidan,
+och räkna för varje a ut ett giltigt intervall för längden 
+b på den andra sidan. Ifall a ligger i intervallet för b
+sätter man b = a, ifall a<minB sätter man b=minB och
+ifall a>minB sätter man b=maxB. Det värdet på a som ger
+lägst värde på abs(a-b) är lösningen.
+
+Om man testar alla möjliga värden på a kommer man i värsta fall
+behöva iterara 10^12 gånger (alldeles för mycket), men på grund
+av rektangels symmetri räcker det att testa alla värden på a som
+är mindre eller lika med kvadratroten av maximala arean, vilket ger 
+ca 10^6 iterationer av loopen.
+
+*/
+
 int main(){
 	cin.sync_with_stdio(false);
     ll mn,mx;
