@@ -10,7 +10,7 @@ typedef vector<ll> vi;
 typedef pair<ll,ll> pii;
 
 /*
-Iterera över alla möjliga värden a på den ena sidan,
+Iterera över alla möjliga längder a på den ena sidan,
 och räkna för varje a ut ett giltigt intervall för längden 
 b på den andra sidan. Ifall a ligger i intervallet för b
 sätter man b = a, ifall a<minB sätter man b=minB och
